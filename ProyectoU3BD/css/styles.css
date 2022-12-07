@@ -1,0 +1,1662 @@
+/* Equipo Programación Web Efraín Montalvo Sánchez 20130810 - Gabriel Zamora Morales */
+:root {
+    --blanco: #ecf0f1;
+    --oscuro: #17202a;
+    --primario: #273746;
+    --nintendo: #db3939;
+    --xbox: #218e2d;
+    --playstation: #15839e;
+    --pc: #603586;
+    /*Nuevos 21 Nov 2022 JS*/
+    --oscuroRojo: #462727;
+    --rojoFuerte: #8d3e3e;
+    --oscuroVerde: #27463a;
+    --oscuroAzul: #0f3e51;
+    --oscuroMorado: #25172a;
+    /*Nuevos 21 Nov 2022 JS*/
+}
+
+/* ESTILOS PARA JAVASCRIPT BANNERS JQUERY 20 NOVIEMBRE*/
+
+ul,ol {
+    list-style: none;
+}
+
+.slideshow {
+    width: 100%;
+    position: relative;
+}
+
+.slider li, ul {
+    width: 100%;
+}
+
+.slider li {
+    overflow: hidden;
+}
+
+.slider li img {
+    width: 100%;
+    padding-right: 4rem;
+}
+
+.slider .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    z-index: 1;
+
+}
+
+.pagination {
+    position: absolute;
+    top: 95%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    font-size: 2rem;
+    margin: 0rem 0.3rem;
+    color: var(--oscuro);
+}
+
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 3.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left {
+    left: 0.65rem;
+}
+
+.right {
+    right: 0.65rem;
+}
+
+@media (max-width: 768px) {
+    .slider .caption p {
+    display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider .caption h1 {
+    font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .left .right {
+    font-size: 3rem;
+    }
+}
+
+/*
+@media (max-width: 768px) {
+    .slider li img {
+    width: 60rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider li img {
+    width: 60rem;
+    }
+}
+*/
+
+@media (max-width: 480px) {
+    .slider .caption h1 {
+    font-size: 1.5rem;
+    }
+}
+
+/* ESTILOS PARA JAVASCRIPT BANNERS JQUERY 20 NOVIEMBRE*/
+
+/* ESTILOS PARA JAVASCRIPT LIBRES 21 NOVIEMBRE */
+
+.divCountdown {
+
+    background-color: var(--oscuro);
+    margin-top: 5rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+
+/*
+.colorFonNint {
+    background-color: var(--oscuroRojo);
+    border-radius: 3rem;
+}
+
+.colorFonXBOX {
+    background-color: var(--oscuroVerde);
+    border-radius: 3rem;
+}
+
+.colorFonPS {
+    background-color: var(--oscuroAzul);
+    border-radius: 3rem;
+}
+
+.colorFonPC {
+    background-color: var(--oscuroMorado);
+    border-radius: 3rem;
+}
+*/
+
+/* Para el Script 3 */
+.word { 
+    background-color: var(--oscuro);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: white;
+    line-height: 1.4em;
+    height: 1.4em;
+    padding: 0 14px 0 7px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .word:before {
+    content: '';
+    background-color: black;
+    width: 1px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 7px;
+  }
+  /* Para el Script 3 */
+
+/* ESTILOS PARA JAVASCRIPT LIBRES 21 NOVIEMBRE */
+
+
+
+@media (max-width: 480px) {
+    .nav-prin-reg {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+            
+    }
+}
+
+/*Valores para que se puedan usar los rem*/
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.registro {
+    font-size: 1.5rem;
+    text-align: end;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 8rem;
+}
+
+.margen-derecha {
+    padding-right: 3rem;
+    text-align: end;
+}
+
+.nav-prin-reg {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    align-content: center;
+    justify-content: right;
+
+}
+
+#videoRegistro {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--primario) 5%, var(--oscuro) 75%);
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.oscuro {
+
+    background-color: Var(--oscuro);
+    padding-top: 1rem;
+    padding-bottom: 8rem;
+
+}
+
+.oscuroRegistro {
+
+    background-color: Var(--oscuro);
+    padding-top: 1rem;
+    padding-bottom: .01rem;
+
+}
+
+.centradoizq {
+    text-align: left;
+    size: 0.5rem;
+}
+
+.centrarTexto {
+    text-align: center;
+}
+
+.centrarTextoNos {
+    text-align: center;
+    padding: 1rem;
+    margin-right: 6rem;
+}
+
+
+.textoBannerP {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--oscuro);
+    align-items: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+
+}
+
+.navegacion-principal a:hover {
+    color:var(--primario)
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.registro a:visited {
+    color: var(--blanco);
+}
+
+.nav-bg {
+    background-color: var(--oscuro);
+}
+
+
+.sombreadoGrid {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+
+.alinearVertHor {
+
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+
+}
+
+.alinearVertHorReg {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+
+}
+
+.colorBlanco {
+    color: var(--blanco);
+}
+
+.imagenLogo {
+    background-image: url(../img/gsLogoNegro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 65px;
+    width: 135px;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
+
+/*Imágenes de Tipografía*/
+
+.centrarLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .centrarLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25rem;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        margin-top: -7rem;
+    }
+}
+
+.imgLogoCat {
+    background-image: url(../img/catalogoTip.png);
+    background-repeat: no-repeat;
+    background-size: 45rem;
+    height: 13rem;
+    width: 45rem;
+    margin-left: 55rem;
+    margin-bottom: 2rem;
+    border-radius: 4rem;
+}
+
+.imgLogoNosotros {
+    background-image: url(../img/quienesSomosTip.png);
+    background-repeat: no-repeat;
+    background-size: 45rem;
+    height: 13rem;
+    width: 45rem;
+    margin-left: 55rem;
+    margin-bottom: 2rem;
+    border-radius: 4rem;
+}
+
+/*Banner Principal*/
+.imagenBannerP {
+
+    background-image: url(../img/bannerPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.imagenBannerP2 {
+
+    background-image: url(../img/bannerPrincipal3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/*Banner Secundario*/
+.imagenBannerS {
+
+    background-image: url(../img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.imagenBannerOferta {
+
+    background-image: url(../img/Ofertas2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/*Imagenes de las categorias de los catalogos*/
+
+.imgCatNintendo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../img/banner1.jpg);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.imgCatNintendo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+
+.imgCatXbox {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../img/masterchief.jpg);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.imgCatXbox:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.imgCatPlayStation {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../img/forzahorizon.jpg);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.imgCatPlayStation:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.imgCatPC {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../img/fallguys.jpg);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.imgCatPC:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.nintendoLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../img/nintendo_switch_logo.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.nintendoLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .2s;
+
+}
+
+.logo {
+    height: 350px;
+    border-radius: 4rem;
+}
+
+.playstationLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/playstationLogo.png);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+
+.playstationLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .2s;
+
+}
+
+
+.xboxLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/xboxLogo.png);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.xboxLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .2s;
+
+}
+
+
+.pcLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/PCLogo.png);
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+
+}
+
+.pcLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .2s;
+
+}
+
+
+.sombreadoBanner {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+
+.sombreadoLogos {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+
+.gridConsolas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.gridBannersCatalogo {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.gridNintendoCatalogo {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.gridPSCatalogo {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.gridXBOXCatalogo {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.gridPCCatalogo {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+/* CARÁTULAS DE VIDEOJUEGOS EN CATÁLOGO*/
+
+.smashbrosLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/supersmashbrosultimate.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.smashbrosLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: transform .2s;
+
+}
+
+.tlozbotwLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/botw.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.tlozbotwLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: transform .2s;
+
+}
+
+.mariopartyLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/marioparty.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.mariopartyLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: transform .2s;
+
+}
+
+.persona5Logo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/persona5.png);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.persona5Logo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: transform .2s;
+
+}
+
+.pokemonLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/pokemonpuresc.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+
+.pokemonLogo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: transform .2s;
+
+}
+
+
+.marioodysseyLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/mariooddysey.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.marioodysseyLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+
+.haloinfiniteLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/haloinfinite.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.haloinfiniteLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.forzahorizon5Logo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/forza\ horizon\ 5.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.forzahorizon5Logo:hover {
+    -webkit-transform: scale(1.2);
+    transition: transform .2s;    
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.codmw2Logo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/codmw22022.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.codmw2Logo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.oriLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/ori.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.oriLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.horizonfwLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/horizonforbiddenwest.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.horizonfwLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.gowragnarokLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/godofwarragnarok.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.gowragnarokLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.spidermanLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/spiderman.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.spidermanLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.tlou2Logo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/thelastofus2.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.tlou2Logo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.ratchetLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/ratchetandclank.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.ratchetLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.detroitbhLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/detroitbecomehuman.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.detroitbhLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.minecraftLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/minecraft.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.minecraftLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.etgLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/enterthegungeon.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.etgLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.inscryptionLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/inscryption.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.inscryptionLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+.tboirLogo {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/videojuegos/repentance.jpg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 4rem;
+    filter: grayscale(80%);
+
+}
+
+.tboirLogo:hover {
+    transition: transform .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+
+}
+
+
+/* FIN DE CARÁTULAS DE VIDEOJUEGOS EN CATÁLOGO*/
+
+
+h6 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.margen-izquierda {
+    text-align: start;
+    padding-left: 3rem;
+}
+
+.margenRedes {
+    margin-bottom: -1rem;
+}
+
+.alinearRedes {
+    margin-bottom: -.65rem;
+}
+
+/*Para registro y login*/
+.reg100 input {
+    width: 100%;
+    align-self: center;
+}
+
+.encLogo {
+    display: grid;
+    grid-template-columns: 10% 77%;
+    column-gap: 2rem;
+}
+
+.mostrarLogo {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    margin-top: -4rem;
+    margin-bottom: 5rem;
+}
+
+.fondo2 {
+    background-image: linear-gradient(to top, var(--primario) 5%, var(--oscuro) 75%);
+
+}
+
+.botont {
+    text-align: center;
+    width: fit-content;
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    padding-left: 2rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-right: 2rem;
+    text-decoration: solid;
+
+}
+
+/*Para registro y login*/
+
+/*Formulario*/
+
+.formulario {
+    background-color: var(--primario);
+    width: min(60rem, 100%);
+    /* Utiliza el valor mas pequeño entre los dos que pusiste*/
+    margin: 0 auto;
+    /*Utilizar en formularios, cuyo padre no sea dispay flex*/
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--oscuro);
+        justify-content: space-around;
+        font-size: 3rem;
+        padding: 1.5rem;
+
+    }
+}
+
+@media (min-width: 768px) {
+
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridConsolas {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gridConsolas {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nintendoLogo {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nintendoLogo {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .alinearVertHor {
+        font-size: 1.5rem;
+        padding: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .alinearVertHor {
+
+        font-size: 1.5rem;
+        padding: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridNintendoCatalogo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .gridNintendoCatalogo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gridXBOXCatalogo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .gridXBOXCatalogo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gridPSCatalogo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .gridPSCatalogo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gridPCCatalogo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .gridPCCatalogo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .imgBig {
+        height: 250px !important;
+        border-radius: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgBig {
+        height: 150px !important;
+        border-radius: 4rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .centrarTextoNos {
+        padding: 2rem;
+        margin-right: 2rem;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .centrarTextoNos {
+        padding: 2rem;
+    }
+}
+
+
+/*Media Queries Fin*/
+
+.campo:nth-child(3),
+.campo:nth-child(4) {
+    grid-column: 1 / 3;
+}
+
+.campo {
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea {
+    height: 15rem;
+    width: 52rem;
+}
+
+@media (max-width: 560px) {
+    .campo textarea {
+        height: 15rem;
+        width: 26rem;
+    }
+}
+
+.w-sm-100 {
+    width: 100%;
+}
+
+.w-sm-33 {
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+
+
+}
+
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+.alinear-izquierda {
+    justify-content: flex-start;
+    margin-top: 6rem;
+}
+
+.alinear-centro {
+    justify-content: center;
+    margin: 1rem;
+}
+
+/* Quienes Somos*/
+
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /*grid-template-columns: min-content min-content;*/
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+
+        grid-template-columns: 35% 65%;
+        column-gap: 2rem;
+    }
+}
+
+/** Bloques **/
+.bloques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .bloques {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.bloque {
+    text-align: center;
+}
+
+
+
+
+.imagenpequeña {
+
+
+    height: 45px;
+    width: 45px;
+    position: relative;
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.imgBig {
+    height: 350px;
+    border-radius: 4rem;
+}
+
+.img100{
+    width:100%;
+}
+
+.imgFondo {
+
+    background-image: url(../img/bannerPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.colorNint {
+    color: var(--nintendo);
+}
+
+.colorXbox {
+    color: var(--xbox);
+}
+
+.colorPS {
+    color: var(--playstation);
+}
+
+.colorPC {
+    color: var(--pc);
+}
+.formCompra {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+    
+}
+
+@media (min-width: 768px ) {
+    .formCompra {
+        display: grid;
+        
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+        border-radius: 1rem;
+        
+    }
+}
+
+
+@media (min-width:768px ) {
+    .campo2{
+        height:80%;
+        margin-bottom: 1rem;
+    }
+}
+.campo2{
+    height:80%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.formulario__submit {
+    border-radius: 9rem;
+    border: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover {
+    cursor: pointer;
+    color:var(--blanco);
+    background-color: var(--oscuro);
+}
+
+.fs15{
+ font-size: 1.7rem;
+}
+
+.pagar{
+    display: block;
+}
+ 
+@media (min-width:780px ) {
+    .pagar{
+        display: grid;
+        grid-template-columns: 60% 40%;
+           
+    }
+}
+ 
+
+.tablasCarr{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+th{
+    background-color: var(--oscuro);
+  }
+
+
+.carrito{
+    width: 100%;
+    border-style: inset;
+    height: fit-content;
+    /*border-collapse: collapse;*/
+
+    
+}
+
+
+tr:nth-child(even) {
+    background-color: var(--oscuro);
+  }
+
+
+th, td {
+text-align: center;
+padding: 8px;
+}
+
+
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <!--Icono del título-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Precargar-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <!--Tipografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <!--Llamar a styles para que se apliquen los cambios-->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<header>
+    <!--Registro-->
+    <nav class="nav-prin-reg">
+        <a href="index.html"> (Volver a inicio) </a>
+    </nav>
+    <a href="index.html" class="imagenLogo"> </a>
+
+    <!--Nombre de la Tienda-->
+    <nav>
+        <img src="gameshopLogoHor.png" alt="LogoGameShop" class="centrarLogo">
+    </nav>
+
+    <!--Botones de Navegación-->
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html"> Inicio </a>
+            <a href="catalogo.html"> Catálogo </a>
+            <a href="Quienes Somos.html"> Quienes Somos </a>
+            <a href="index.html #contacto"> Contacto </a>
+        </nav>
+        <!--Botones de Navegación-->
+    </div>
+</header>
+
+<body>
+
+
+    <section>
+        <div>
+            <h4 class="titulo"> Ingresa los datos de tu tarjeta para confirmar la compra. </h4>
+        </div>
+        <form id="form1" name="form1" method="post" action="pagoTarjeta.php" class="formulario gridTarjeta">
+            <fieldset>
+
+
+                <div>
+                    <div class="campo   reg100">
+                        <label> Tipo de tarjeta </label>
+                        <select class="campoTarjeta" name="tipoTarjeta" id="tipoTarjeta">
+                            <option disabled selected>-- Selecciona el Tipo --</option>
+                            <option>Credito</option>
+                            <option>Debito</option>
+                        </select>
+                    </div><br>
+
+                    <div class="campo   reg100">
+                        <label> Número de Tarjeta </label>
+                        <input class="input-text" type="tel" placeholder="Ingresa el número de tu tarjeta" name="numTarjeta" id="numTarjeta">
+                    </div><br>
+
+                    <div class="campo   reg100">
+                        <label> Fecha de caducidad </label>
+                        <select class="campoTarjeta" name="mesTarjeta" id="mesTarjeta">
+                            <option disabled selected>-Mes-</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+
+                        <select class="campoTarjeta" name="anioTarjeta" id="anioTarjeta">
+                            <option disabled selected>-Año-</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                            <option>2033</option>
+                            <option>2034</option>
+                            <option>2035</option>
+                        </select>
+
+                    </div><br>
+
+                    <div class="campo   reg100">
+                        <label> Código de seguridad </label>
+                        <input class="input-text" type="tel" placeholder="" name="cod_seguridad" id="cod_seguridad">
+                    </div><br>
+
+                    <div class="campo   reg100">
+                        <label> Nombre </label>
+                        <input class="input-text" type="text" placeholder="Ingresa el Nombre" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="campo   reg100">
+                        <label> Apellidos </label>
+                        <input class="input-text" type="text" placeholder="Ingresa los Apellidos" name="apellidos" id="apellidos">
+                    </div>
+
+                    <div class="campo   reg100">
+                        <label> Localidad </label>
+                        <input class="input-text" type="text" placeholder="Ingresa la Localidad" name="localidad" id="localidad">
+                    </div>
+
+                    <div class="campo   reg100">
+                        <label> Dirección </label>
+                        <input class="input-text" type="text" placeholder="Ingresa la Dirección" name="direccion" id="direccion">
+                    </div>
+
+                    <div class="campo   reg100">
+                        <label> Cód. Postal </label>
+                        <input class="input-text" type="text" placeholder="Ingresa el Código Postal" name="cod_postal" id="cod_postal">
+                    </div>
+
+                    <div class="campo   reg100">
+                        <label> País </label>
+                        <input class="input-text" type="text" placeholder="Ingresa el País" name="pais" id="pais">
+                    </div>
+
+                    <div class="campo   reg100">
+                        <label> Teléfono </label>
+                        <input class="input-text" type="tel" placeholder="Ingresa el Teléfono" name="telefono" id="telefono">
+                    </div>
+
+
+                    <div class="enviar alinearVertHorReg">
+                        <input type="submit" value="Confirmar compra" onclick="pagoTarjeta.php">
+                    </div>
+                    <br>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <br>
+
+    <!--Páginas extras del producto-->
+    <footer class="oscuroRegistro">
+
+        <div class="margen-izquierda ">
+            <h5> Visita nuestras redes sociales: </h5>
+
+            <h6 class="margenRedes">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="alinearRedes icon icon-tabler icon-tabler-brand-instagram" width="20" height="20"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="#fd0061" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+                Instagram: @gameshopMX
+            </h6>
+            <h6 class="margenRedes">
+                <svg xmlns="http://www.w3.org/2000/svg" class="alinearRedes icon icon-tabler icon-tabler-brand-twitter"
+                    width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+                Twitter: @gameshopMX
+            </h6>
+            <h6 class="margenRedes">
+                <svg xmlns="http://www.w3.org/2000/svg" class="alinearRedes icon icon-tabler icon-tabler-brand-facebook"
+                    width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3b5998" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                Facebook: Game Shop Mexico
+            </h6>
+
+            <h6 class="margenRedes">
+                <svg xmlns="http://www.w3.org/2000/svg" class="alinearRedes icon icon-tabler icon-tabler-brand-youtube"
+                    width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c4302b " fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                </svg>
+                Youtube: GameShop Mexico
+            </h6>
+        </div>
+        <h5 class="margen-derecha">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-registered" width="20"
+                height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ecf0f1" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="9" />
+                <path d="M9 16v-8h4a2 2 0 0 1 0 4h-4m3 0l3 4" />
+            </svg>
+            Todos los derechos reservados (2022) GameShopTM.
+        </h5>
+
+    </footer>
+    <!--Páginas extras del producto-->
+</body>
+
+</html>
